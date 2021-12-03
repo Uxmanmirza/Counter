@@ -5,21 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
     <main>
-        <div class="contanier">
+        <!-- <div class="contanier">
             <h1>Counter</h1>
-            <span class="value">0</span>
+            <span id="result">0</span>
         <div class="btnContanier">
-            <button class="btn" type="button" class="btn btn-outline-secondary">Decrease</button>
-            <button class="btn" type="button" class="btn btn-outline-secondary">Reset</button>
-            <button class="btn" type="button" class="btn btn-outline-secondary">Increase</button>
+            <button id="btnDec" type="button"  >Decrease</button>
+           
+            <button id="btnInc" type="button"  >Increase</button>
         </div>
-        </div>
+        </div> -->
+        <body>
+            <h1 id="result">0</h1>
+            <button id="positiveBtn">INCREASE</button>
+            <button id="negativeBtn">DECREASE</button>
+        </body>
       
         
     </main>
 </body>
+<script>
+    let myCount = 0;
+const result = document.getElementById("result");
+const positiveBtn = document.getElementById("positiveBtn");
+const negativeBtn = document.getElementById("negativeBtn");
+positiveBtn.onclick = function() {
+    //increment method in counter
+   return = myCount + 1;
+    result.innerText = myCount;
+};
+negativeBtn.onclick = function() {
+    //decrrement method in counter
+    return= myCount - 1;
+    result.innerText = myCount;
+};
+</script>
 </html>
